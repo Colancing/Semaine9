@@ -1,0 +1,12 @@
+h1 {
+    margin: 0 auto;
+    padding:20px;
+    background-image: url("logo_x_pattern.png");
+    margin-bottom: 20px;
+}
+#searchContent {
+    padding: 0 10px 0 29px;
+    color: #555555;
+    width: 300px;
+    height: 29px;
+}
