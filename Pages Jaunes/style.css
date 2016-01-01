@@ -4,9 +4,17 @@ h1 {
     background-image: url("logo_x_pattern.png");
     margin-bottom: 20px;
 }
-#searchContent {
+#searchContent, #search, #hide, #show {
     padding: 0 10px 0 29px;
     color: #555555;
     width: 300px;
     height: 29px;
 }
+.hideIt {
+    display:none;
+}
+.showIt{
+    display:block;
+}
+
+

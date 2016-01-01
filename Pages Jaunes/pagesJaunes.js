@@ -8,6 +8,8 @@ var erase = document.getElementById("erase");
 var searchContent = document.getElementById("searchContent");
 var search = document.getElementById("search");
 var searchResult = document.getElementById("searchResult");
+var hide = document.getElementById("hide");
+var show = document.getElementById("show");
 
 
 var contacts = [{
@@ -74,8 +76,20 @@ function searchContact() {
     }
     searchResult.innerHTML = elements;
 }
+function visibility_hide(){
+    list.classList.toggle("hideIt");
+    hide.classList.toggle("hideIt");
+    show.classList.remove("hideIt");
+}
+function visibility_show(){
+    list.classList.remove("hideIt");
+    hide.classList.remove("hideIt");
+    show.classList.toggle("hideIt");
+}
 add.onclick = addElement;
 erase.onclick = eraseElement;
 search.onclick = searchContact;
+hide.onclick = visibility_hide;
+show.onclick = visibility_show;
 
 showList();
