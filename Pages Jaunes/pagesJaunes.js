@@ -76,20 +76,16 @@ function searchContact() {
     }
     searchResult.innerHTML = elements;
 }
-function visibility_hide(){
+function visibility_toggle(){
     list.classList.toggle("hideIt");
     hide.classList.toggle("hideIt");
-    show.classList.remove("hideIt");
-}
-function visibility_show(){
-    list.classList.remove("hideIt");
-    hide.classList.remove("hideIt");
     show.classList.toggle("hideIt");
 }
+
 add.onclick = addElement;
 erase.onclick = eraseElement;
 search.onclick = searchContact;
-hide.onclick = visibility_hide;
-show.onclick = visibility_show;
+hide.onclick = visibility_toggle;
+show.onclick = visibility_toggle;
 
 showList();
